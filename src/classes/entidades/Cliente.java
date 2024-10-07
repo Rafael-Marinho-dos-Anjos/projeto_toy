@@ -22,7 +22,12 @@ public class Cliente implements EntidadeInterface {
 
     @Override
     public String[] getColumnNames() {
-        String[] colNames = {"id_cliente", "nome", "data_nascimento", "contato"};
+        String[] colNames = {
+            "id_cliente",
+            "nome",
+            "data_nascimento",
+            "contato"
+        };
 
         return colNames;
     }

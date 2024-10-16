@@ -67,9 +67,16 @@ public class Pedido implements EntidadeInterface {
 
         values [0] = String.valueOf(this.id);
         values [1] = String.valueOf(this.id_cliente);
-        values [2] = String.valueOf(this.id_entregador);
+
+        if (this.id_entregador == 0) {
+            values [2] = "NULL";
+        }
+        else {
+            values [2] = String.valueOf(this.id_entregador);
+        }
+        
         values [3] = "'" + this.data_pedido + "'";
-        values [4] = "'" + this.data_finalizado + "'";
+        values [4] = this.data_finalizado;
         values [5] = "'" + this.endereco + "'";
 
         return values;

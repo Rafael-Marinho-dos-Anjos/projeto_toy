@@ -31,8 +31,8 @@ create table tab_pedido (
     id_pedido int auto_increment,
     id_cliente int not null,
     id_entregador int,
-    data_pedido date not null,
-    data_finalizado date,
+    data_pedido datetime not null,
+    data_finalizado datetime,
     endereco varchar(128) not null,
 
     primary key (id_pedido),

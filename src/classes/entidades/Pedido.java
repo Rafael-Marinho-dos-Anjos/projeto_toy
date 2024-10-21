@@ -98,4 +98,6 @@ public class Pedido implements EntidadeInterface {
         return values;
     }
     
+    public void setDataFinalizado (String data) { this.data_finalizado = data; }
+    public void setEntregador (Entregador entregador) { this.id_entregador = entregador.getId(); }
 }
